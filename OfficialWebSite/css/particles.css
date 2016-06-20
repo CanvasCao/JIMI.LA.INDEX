@@ -1,0 +1,10 @@
+#particles-js {
+
+    background-image:-webkit-linear-gradient(to top, #171c33, #223680);
+    background-image:linear-gradient(to top, #171c33, #223680);
+}
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+}
