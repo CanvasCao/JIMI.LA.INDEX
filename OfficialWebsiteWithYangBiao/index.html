@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
     <title>肌秘官方网站</title>
     <style></style>
     <link rel="stylesheet" href="css/main.css"/>
@@ -174,6 +175,9 @@
 
 
 <script src='js/tool/jquery-1.8.3.min.js'></script>
+<script src='js/app/downloadAppend.js'></script>
+
+
 <script src='js/tool/jquery.mousewheel.min.js'></script>
 <script src='js/tool/jquery.easie.js'></script>
 <script src='js/tool/velocity.min.js'></script>
@@ -182,7 +186,7 @@
 <script src='js/module/header.js'></script>
 <script>
     (function () {
-        var header = new Header($('.header')[0], null);
+        var header = new Header('.header', null);
         header.initCur(0)
         window.header = header;
     })()
@@ -199,7 +203,7 @@
             pro1: ['日本', '125ml', '￥220', '淡妆或防晒', '一般致痘性'],
             pro2: ['美国', '150ml', '￥180', '淡妆或防晒', '轻微致痘性'],
         };
-        var vsm = window.vsm = new VerticalScrollMagnifier($('.page0 .scroll')[0], data, {
+        var vsm = new VerticalScrollMagnifier('.page0 .scroll', data, {
             height: 85,
             width: 400,
             circleMargin: 30
@@ -220,8 +224,7 @@
 <script src='js/app/particlesAppend.js'></script>
 <script>
     $(function () {
-        $('body').css({'opacity':1});
-
+        $('body').css({'opacity': 1});
     })
 </script>
 </body>

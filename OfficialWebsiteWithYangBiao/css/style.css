@@ -467,7 +467,6 @@
     .aboutlb2 p {
         font: 16px/26px "微软雅黑", Arial;
         color: #484848;
-        width: 1000px;
         float: left;
     }
 
@@ -478,7 +477,6 @@
     }
 
     .about_li {
-        width: 1000px;
         float: left;
         margin: 15px 0;
     }
@@ -505,44 +503,23 @@
         color: #058eff;
     }
 
-    .about_li li:hover {
-        background: #f2f6f9;
-    }
-
     .about_li li.li_01 {
         background: url(../images/jmcicon_01.png) 23px 15px no-repeat;
-    }
-
-    .about_li li.li_01:hover {
-        background: #f2f6f9 url(../images/jmcicon_01.png) 23px 15px no-repeat;
     }
 
     .about_li li.li_02 {
         background: url(../images/jmcicon_02.png) 23px 15px no-repeat;
     }
 
-    .about_li li.li_02:hover {
-        background: #f2f6f9 url(../images/jmcicon_02.png) 23px 15px no-repeat;
-    }
-
     .about_li li.li_03 {
         background: url(../images/jmcicon_03.png) 23px 15px no-repeat;
-    }
-
-    .about_li li.li_03:hover {
-        background: #f2f6f9 url(../images/jmcicon_03.png) 23px 15px no-repeat;
     }
 
     .about_li li.li_04 {
         background: url(../images/jmcicon_04.png) 23px 15px no-repeat;
     }
 
-    .about_li li.li_04:hover {
-        background: #f2f6f9 url(../images/jmcicon_04.png) 23px 15px no-repeat;
-    }
-
     .aboutlb2 dl {
-        width: 1000px;
         float: left;
         margin: 30px 0;
         font: 14px/40px "微软雅黑", Arial;
@@ -550,12 +527,10 @@
     }
 
     .aboutlb2 dl dt {
-        width: 1000px;
         float: left;
     }
 
     .aboutlb2 dl dd {
-        width: 940px;
         padding-left: 30px;
         color: #0080e6;
         margin-left: 30px;

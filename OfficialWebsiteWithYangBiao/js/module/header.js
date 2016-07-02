@@ -10,7 +10,7 @@
 ;
 (function (w, d, $, undefined) {
     function Header(container, data) {
-        this.C = this.container = container;
+        this.C = this.container = (typeof container == 'string') ? $(container) : container;
         this.data = data;
         this.config = {
             curJson: {
@@ -22,7 +22,7 @@
                 color: 'black'
             },
             hrefArr: ['首页', '关于肌秘', '开放数据平台', '媒体开放平台', '专业服务', '加入我们'],
-            urlArr: ['index.html', 'about.html', 'open.html', 'javascript:;', 'service.html', 'join_us.html']
+            urlArr: ['index.html', 'about.html', 'open.html', 'http://media.jimi.la/auth/login', 'service.html', 'join_us.html']
         };
         this.init();
     }
@@ -125,10 +125,7 @@
             var that = this;
 
             //event...........................................
-            //sibs没用
-            //$(this.C).find('.options div').click(function () {
-            //    $(this).css(that.config.curJson).siblings().css(that.config.oriJson);
-            //})
+
 
             //点击跳转
             $(this.C).find('.options>div').each(function (i, e) {
@@ -137,50 +134,6 @@
                 })
             })
 
-            //媒体开放平台正在开发中......
-            $(this.C).find('.options>div').eq(3).css({'position': 'relative'}).append(
-                '<div class="mtct">' +
-                '<i></i>' +
-                '<span>功能开发中...</span>' +
-                '</div>'
-            )
-
-            $(this.C).find('.mtct').css({
-                position: 'absolute',
-                height: '52px',
-                left: '0',
-                'z-index': '100',
-                top: '55px',
-                background: '#fff url(img/icon03.jpg) 10px center no-repeat',
-                border: '1px solid #d6d6d6',
-                'border-radius': '10px',
-                padding: '0 10px 0 60px',
-                display: 'none'
-            })
-
-
-            $(this.C).find('.mtct span').css({
-                float: 'left',
-                'font-size': '14px',
-                'white-space': 'nowrap',
-                'line-height': '52px'
-            })
-
-            $(this.C).find('.mtct i').css({
-                position: 'absolute',
-                'z-index': '101',
-                width: '30px',
-                height: '19px',
-                background: 'url(img/icon04.png) 0 0 no-repeat',
-                left: '30px',
-                top: '-17px'
-            })
-
-            $(this.C).find('.options>div').eq(3).hover(function () {
-                $(this).find('.mtct').stop().fadeIn('fast')
-            }, function () {
-                $(this).find('.mtct').stop().fadeOut('fast')
-            })
 
 
             //init.................................

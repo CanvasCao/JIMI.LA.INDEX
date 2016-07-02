@@ -1,8 +1,9 @@
+//particlesAppend after svgappend
 (function (w) {
     var json = {
         "particles": {
             "number": {
-                "value": 80,
+                "value": 60,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -25,12 +26,12 @@
                 }
             },
             "size": {
-                "value": 4,
+                "value": 5,
                 "random": true,
                 "anim": {
                     "enable": false,
                     "speed": 40,
-                    "size_min": 0.1,
+                    "size_min": 1,
                     "sync": false
                 }
             },

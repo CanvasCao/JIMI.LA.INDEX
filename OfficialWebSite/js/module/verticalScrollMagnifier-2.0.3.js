@@ -13,7 +13,7 @@
 
 
     function VerticalScrollMagnifier(container, data, newConfig) {
-        this.C = this.container = container;
+        this.C = this.container = (typeof container == 'string') ? $(container) : container;
         this.data = data;
         this.newConfig = newConfig;
         this.config = {
