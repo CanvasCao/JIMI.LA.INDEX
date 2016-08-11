@@ -527,7 +527,7 @@
     }
 
     .aboutlb2 dl dt {
-        float: left;
+        /*float: left;*/
     }
 
     .aboutlb2 dl dd {
@@ -535,7 +535,7 @@
         color: #0080e6;
         margin-left: 30px;
         background: url(../images/lbicon.png) 0 8px no-repeat;
-        float: left;
+        /*float: left;*/
     }
 
     .showTabsTitle {
