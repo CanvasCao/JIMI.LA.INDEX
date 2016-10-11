@@ -29,7 +29,7 @@
         },
         createDom: function () {
             $(this.C).append(
-                //¿í¸ß¹ØÏµ²»´ó ÒòÎªÃ»ÓĞoverflow hidden
+                //å®½é«˜å…³ç³»ä¸å¤§ å› ä¸ºæ²¡æœ‰overflow hidden
                 '<svg class="path"  id=' + this.pathId + ' width="300" height="300" version="1.1" xmlns="http://www.w3.org/2000/svg">' +
                 '<path xmlns="http://www.w3.org/2000/svg"' +
                 'd="M' + 3 * this.EL + ' ' + this.EL + ' ' +
@@ -61,7 +61,7 @@
 
     var B = 30;
     var gen3 = Math.sqrt(3);
-    var cirCenterArr = [ //Áù¸öÔ²ĞÄµÄ×ø±ê
+    var cirCenterArr = [ //å…­ä¸ªåœ†å¿ƒçš„åæ ‡
         [0, -B],
         [B * gen3 / 2, -B / 2],
         [B * gen3 / 2, B / 2],
@@ -72,7 +72,7 @@
 
     var svgCirCleArr = [];
     for (i = 0; i < 6; i++) {
-        //µÈÓÚ×îºóÒ»¸ö¾Í¼Ó»Øµ÷ ·ñÔò²»¼Ó
+        //ç­‰äºæœ€åä¸€ä¸ªå°±åŠ å›è°ƒ å¦åˆ™ä¸åŠ 
         var callback = (i == 5)
             ? function () {
             $('.svgCon').animate({opacity: 0});
@@ -80,7 +80,7 @@
             $('.svgBtn').show().css({top: '100%'}).velocity({top: '50%'}, 1200, ease);
             $('.imgDiv').css({'z-index': 2}).velocity({opacity: 1}, 1200, ease, function () {
                 $('.header').css({top: '-80px'}).velocity({top: 0}, 'slow', ease);
-                $('.svgCon').empty(); //ÕâÀïÖ»ÊÇÍ¼Æ¬³öÀ´µÄ»Øµ÷ ²»Òª¼ÓÆäËû´úÂë
+                $('.svgCon').empty(); //è¿™é‡Œåªæ˜¯å›¾ç‰‡å‡ºæ¥çš„å›è°ƒ ä¸è¦åŠ å…¶ä»–ä»£ç 
                 particlesAppend();
             });
 
@@ -94,7 +94,7 @@
     }
 
 //        console.log(svgCirCleArr)
-    //»­Ïß¶¨Ê±Æ÷
+    //ç”»çº¿å®šæ—¶å™¨
     for (i = 0; i < svgCirCleArr.length; i++) {
         eval(
             'setTimeout(function(){' +
@@ -106,7 +106,7 @@
 
     $('.svgBtn').click(function () {
         $('.pageSvg').velocity({'top': (-winH)}, duration, ease);
-        $('.page').eq(0).css({top: 0}).siblings('.page').css({top: '100%'}) //siblings ÓĞpage Ò²ÓĞpageSvg
+        $('.page').eq(0).css({top: 0}).siblings('.page').css({top: '100%'}) //siblings æœ‰page ä¹Ÿæœ‰pageSvg
         window.AnimateInArr[0]();
     });
 

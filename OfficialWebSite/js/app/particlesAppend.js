@@ -1,9 +1,21 @@
 //particlesAppend after svgappend
 (function (w) {
+    var winW=$(w).width();
+    var sizeValue=(winW<=1024)?2:5;
+
+    var particlesNumber=0;
+    var ua = navigator.userAgent;
+    if (ua.charAt('iphone') != -1 && ua.charAt('Mac') != -1) {//说明不是IPHONE
+        particlesNumber=30;
+    }
+    else {
+        particlesNumber=60;
+    }
+
     var json = {
         "particles": {
             "number": {
-                "value": 60,
+                "value":particlesNumber,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -26,7 +38,7 @@
                 }
             },
             "size": {
-                "value": 5,
+                "value":sizeValue,
                 "random": true,
                 "anim": {
                     "enable": false,
