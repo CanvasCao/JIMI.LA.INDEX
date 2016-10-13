@@ -4,13 +4,14 @@
     var sizeValue=(winW<=1024)?2:5;
 
     var particlesNumber=0;
-    var ua = navigator.userAgent;
-    if (ua.charAt('iphone') != -1 && ua.charAt('Mac') != -1) {//说明不是IPHONE
-        particlesNumber=30;
-    }
-    else {
-        particlesNumber=60;
-    }
+    //var ua = navigator.userAgent;
+    //if (ua.charAt('iphone') != -1 && ua.charAt('Mac') != -1) {//说明不是IPHONE
+    //    particlesNumber=30;
+    //}
+    //else {
+    //    particlesNumber=60;
+    //}
+    var particlesNumber=(winW<=1024)?65:60;
 
     var json = {
         "particles": {
