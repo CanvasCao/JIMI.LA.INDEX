@@ -1,9 +1,15 @@
 //particlesAppend after svgappend
 (function (w) {
+    var winW = $(w).width();
+    var sizeValue = (winW <= 1024) ? 2 : 4;
+
+    var particlesNumber = 0;
+    var particlesNumber = (winW <= 1024) ? 65 : 60;
+
     var json = {
         "particles": {
             "number": {
-                "value": 60,
+                "value": particlesNumber,
                 "density": {
                     "enable": true,
                     "value_area": 800
@@ -16,21 +22,21 @@
                 "type": 'circle'
             },
             "opacity": {
-                "value": 0.8,
+                "value": 0.9,
                 "random": false,
                 "anim": {
-                    "enable": false,
-                    "speed": 1,
-                    "opacity_min": 0.1,
+                    "enable": true,
+                    "speed": 0.5,
+                    "opacity_min": 0.2,
                     "sync": false
                 }
             },
             "size": {
-                "value": 5,
+                "value": sizeValue,
                 "random": true,
                 "anim": {
                     "enable": false,
-                    "speed": 40,
+                    "speed": 30,
                     "size_min": 1,
                     "sync": false
                 }
@@ -44,7 +50,7 @@
             },
             "move": {
                 "enable": true,
-                "speed": 5,
+                "speed": 4,
                 "direction": "none",
                 "random": false,
                 "straight": false,
@@ -98,9 +104,10 @@
     };
 
 
-    function particlesAppend(){
+    function particlesAppend() {
         particlesJS('particles-js', json);
     }
-    w.particlesAppend= particlesAppend;
+
+    w.particlesAppend = particlesAppend;
 
 })(window);
