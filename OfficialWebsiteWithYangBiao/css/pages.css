@@ -421,4 +421,17 @@
     margin: 50px auto;
     color: #8e8e8e;
     width: 440px;
+    position: relative;
+}
+
+.page4 .txt::before {
+    content: '';
+    position: absolute;
+    left: -60px;
+    top: -40%;
+    background: url(../img/jinhui.jpg) no-repeat 100% 100%;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+
 }
