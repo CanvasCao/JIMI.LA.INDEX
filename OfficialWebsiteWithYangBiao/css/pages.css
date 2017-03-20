@@ -416,22 +416,36 @@
 }
 
 /*page4 第五页*/
-.page4 .txt {
-    display: block;
-    margin: 50px auto;
-    color: #8e8e8e;
-    width: 440px;
-    position: relative;
+
+.page4 .p4container {
+    text-align: center;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    top: 50px;
+    white-space: nowrap;
 }
 
-.page4 .txt::before {
+.page4 .txt1 {
+    color: #8e8e8e;
+    font-size: 14px;
+}
+
+.page4 .txt2 {
+    margin-left: 50px;
+    color: #8e8e8e;
+    position: relative;
+    text-align: center;
+    font-size: 14px;
+}
+
+.page4 .txt2::before {
     content: '';
     position: absolute;
-    left: -60px;
-    top: -40%;
-    background: url(../img/jinhui.jpg) no-repeat 100% 100%;
+    left: -20px;
+    top: 4px;
+    background: url(../img/jinhui.png) no-repeat 100% 100%;
     background-size: contain;
-    width: 40px;
-    height: 40px;
+    width: 15px;
+    height: 15px;
 
 }

@@ -156,7 +156,11 @@
 
     <!-- 第五页是半页 -->
     <div class="page page4">
-      <span class='txt'>版权所有©2016-2017 Jimi.la 版权所有 沪ICP备15051069号</span>
+        <div class='p4container'>
+            <span class='txt1'>版权所有©2016-2017 Jimi.la 版权所有 沪ICP备15051069号</span>
+            <span class='txt2'>沪公网安备 31010902001706号</span>
+        </div>
+
     </div>
 </div>
 
@@ -224,8 +228,11 @@
 <script>
     $(function () {
         $('body').animate({'opacity': 1});
-        $('.page4 .txt').click(function(){
-          window.open('http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&serial=9031000020170109153801000001524330-SAIC_SHOW_310000-1328f-wonders-a245&signData=MEYCIQDMUZPCp1xzF1hVTnkbr23a8g78Y3H0N9CG3UK0PzMKUwIhAOTzjTKZKlRCCJc8qo7Mbe0VqiWPZOulKYTZZlrMmzcE')
+        $('.page4 .txt2').click(function(){
+          window.open('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010902001706')
+        })
+        $('.page4 .txt1').click(function(){
+            window.open('http://218.242.124.22:8081/businessCheck/verifKey.do?showType=extShow&serial=9031000020170109153801000001524330-SAIC_SHOW_310000-1328f-wonders-a245&signData=MEYCIQDMUZPCp1xzF1hVTnkbr23a8g78Y3H0N9CG3UK0PzMKUwIhAOTzjTKZKlRCCJc8qo7Mbe0VqiWPZOulKYTZZlrMmzcE')
         })
     })
 </script>

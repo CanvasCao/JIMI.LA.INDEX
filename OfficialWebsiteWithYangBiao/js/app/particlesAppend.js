@@ -2,8 +2,6 @@
 (function (w) {
     var winW = $(w).width();
     var sizeValue = (winW <= 1024) ? 2 : 4;
-
-    var particlesNumber = 0;
     var particlesNumber = (winW <= 1024) ? 65 : 60;
 
     var json = {
